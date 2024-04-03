@@ -20,14 +20,15 @@ public class Task3 {
 
             System.out.println("Generated number: " + randomNumber);
 
+            sum += randomNumber;
+            count++;
+
             if (occurrences[randomNumber] == 1) {
                 break;
             }
 
             occurrences[randomNumber]++;
 
-            sum += randomNumber;
-            count++;
         }
 
         System.out.println("Total sum of generated numbers: " + sum);

@@ -5,7 +5,7 @@ package org.example.homework5;
 public class Task1 {
     public static void main(String[] args) {
         int number = 123456789;
-        System.out.println(getEvenDigitSum(number));
+        System.out.println("Number: " + number + "\nEven digits sum: " + getEvenDigitSum(number));
     }
 
     public static int getEvenDigitSum(int number) {
@@ -15,13 +15,12 @@ public class Task1 {
 
         int evenSum = 0;
 
-        // Extract each digit and add it to the sum if it's even
         while (number > 0) {
             int digit = number % 10;
             if (digit % 2 == 0) {
                 evenSum += digit;
             }
-            number /= 10; // Remove the last digit
+            number /= 10;
         }
 
         return evenSum;
